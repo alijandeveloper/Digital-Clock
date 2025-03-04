@@ -60,3 +60,20 @@ button:hover {
 .dark #toggle-theme {
     background-color: orange;
 }
+
+/* Custom Time Section */
+.custom-time {
+    margin-top: 20px;
+    display: none;
+}
+
+.custom-time input {
+    padding: 8px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.custom-time button {
+    background-color: green;
+    color: white;
+}
