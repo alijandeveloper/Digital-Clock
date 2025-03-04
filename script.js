@@ -6,7 +6,6 @@ const ampmEl = document.getElementById("ampm");
 const dateEl = document.getElementById("date");
 const toggleFormatBtn = document.getElementById("toggle-format");
 const toggleThemeBtn = document.getElementById("toggle-theme");
-const bgPicker = document.getElementById("bg-picker");
 
 let is24HourFormat = false; // Default: 12-hour format
 // Function to Update Time
@@ -54,17 +53,6 @@ toggleThemeBtn.addEventListener("click", () => {
 // Load Dark Mode Setting
 if (localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("dark");
-}
-
-// Background Picker
-bgPicker.addEventListener("input", (event) => {
-    document.body.style.backgroundColor = event.target.value;
-    localStorage.setItem("bgColor", event.target.value);
-});
-
-// Load Saved Background Color
-if (localStorage.getItem("bgColor")) {
-    document.body.style.backgroundColor = localStorage.getItem("bgColor");
 }
 
 // Run Clock Every Second

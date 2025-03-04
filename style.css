@@ -60,8 +60,3 @@ button:hover {
 .dark #toggle-theme {
     background-color: orange;
 }
-
-#bg-picker {
-    margin-top: 10px;
-    cursor: pointer;
-}
